@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import Profile from './Components/Profile.js'
+
 
 function App() {
+  const FullName="Anis"
+  const Bio="Finace"
+  const Profession="dev"
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Profile name={FullName}bio={Bio} profession={Profession}>
+        {"./pc dell.jpg"}
+      </Profile>
+    
     </div>
   );
 }
